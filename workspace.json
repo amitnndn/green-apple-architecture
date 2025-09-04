@@ -1,0 +1,1641 @@
+{
+  "configuration" : { },
+  "description" : "Architecture",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedDate" : "2025-09-04T02:38:02Z",
+  "model" : {
+    "deploymentNodes" : [ {
+      "children" : [ {
+        "children" : [ {
+          "children" : [ {
+            "containerInstances" : [ {
+              "containerId" : "13",
+              "deploymentGroups" : [ "Default" ],
+              "environment" : "Deployment",
+              "id" : "92",
+              "instanceId" : 1,
+              "properties" : {
+                "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.50dff5f2-079e-4703-9e35-aca74f4984f4.289a1c89-1a9a-4c22-9c76-6797276cad48.apiinstance"
+              },
+              "relationships" : [ {
+                "description" : "Apply Discounts",
+                "destinationId" : "100",
+                "id" : "101",
+                "linkedRelationshipId" : "57",
+                "sourceId" : "92"
+              }, {
+                "description" : "Submit Jobs",
+                "destinationId" : "100",
+                "id" : "102",
+                "linkedRelationshipId" : "62",
+                "sourceId" : "92"
+              }, {
+                "description" : "Queues Requests",
+                "destinationId" : "89",
+                "id" : "106",
+                "sourceId" : "92",
+                "tags" : "Relationship"
+              }, {
+                "description" : "Reads from",
+                "destinationId" : "109",
+                "id" : "110",
+                "linkedRelationshipId" : "61",
+                "sourceId" : "92"
+              }, {
+                "description" : "Reads from",
+                "destinationId" : "112",
+                "id" : "113",
+                "linkedRelationshipId" : "61",
+                "sourceId" : "92"
+              }, {
+                "description" : "Reads from and writes to",
+                "destinationId" : "116",
+                "id" : "117",
+                "linkedRelationshipId" : "59",
+                "sourceId" : "92"
+              }, {
+                "description" : "Reads from and writes to",
+                "destinationId" : "120",
+                "id" : "121",
+                "linkedRelationshipId" : "59",
+                "sourceId" : "92"
+              } ],
+              "tags" : "Container Instance"
+            }, {
+              "containerId" : "8",
+              "deploymentGroups" : [ "Default" ],
+              "environment" : "Deployment",
+              "id" : "93",
+              "instanceId" : 1,
+              "properties" : {
+                "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.50dff5f2-079e-4703-9e35-aca74f4984f4.289a1c89-1a9a-4c22-9c76-6797276cad48.uiinstance"
+              },
+              "relationships" : [ {
+                "description" : "Authenticates",
+                "destinationId" : "92",
+                "id" : "94",
+                "linkedRelationshipId" : "48",
+                "sourceId" : "93"
+              }, {
+                "description" : "Queries",
+                "destinationId" : "92",
+                "id" : "95",
+                "linkedRelationshipId" : "60",
+                "sourceId" : "93"
+              } ],
+              "tags" : "Container Instance"
+            }, {
+              "containerId" : "20",
+              "deploymentGroups" : [ "Default" ],
+              "environment" : "Deployment",
+              "id" : "96",
+              "instanceId" : 1,
+              "properties" : {
+                "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.50dff5f2-079e-4703-9e35-aca74f4984f4.289a1c89-1a9a-4c22-9c76-6797276cad48.adminuiinstance"
+              },
+              "relationships" : [ {
+                "description" : "Authenticates",
+                "destinationId" : "97",
+                "id" : "98",
+                "linkedRelationshipId" : "55",
+                "sourceId" : "96"
+              }, {
+                "description" : "Queries",
+                "destinationId" : "97",
+                "id" : "99",
+                "linkedRelationshipId" : "58",
+                "sourceId" : "96"
+              } ],
+              "tags" : "Container Instance"
+            }, {
+              "containerId" : "26",
+              "deploymentGroups" : [ "Default" ],
+              "environment" : "Deployment",
+              "id" : "97",
+              "instanceId" : 1,
+              "properties" : {
+                "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.50dff5f2-079e-4703-9e35-aca74f4984f4.289a1c89-1a9a-4c22-9c76-6797276cad48.adminapiinstance"
+              },
+              "relationships" : [ {
+                "description" : "Submit Jobs",
+                "destinationId" : "100",
+                "id" : "103",
+                "linkedRelationshipId" : "66",
+                "sourceId" : "97"
+              }, {
+                "description" : "Reads from and writes to",
+                "destinationId" : "116",
+                "id" : "118",
+                "linkedRelationshipId" : "65",
+                "sourceId" : "97"
+              }, {
+                "description" : "Reads from and writes to",
+                "destinationId" : "120",
+                "id" : "122",
+                "linkedRelationshipId" : "65",
+                "sourceId" : "97"
+              } ],
+              "tags" : "Container Instance"
+            }, {
+              "containerId" : "33",
+              "deploymentGroups" : [ "Default" ],
+              "environment" : "Deployment",
+              "id" : "100",
+              "instanceId" : 1,
+              "properties" : {
+                "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.50dff5f2-079e-4703-9e35-aca74f4984f4.289a1c89-1a9a-4c22-9c76-6797276cad48.backendinstance"
+              },
+              "relationships" : [ {
+                "description" : "Writes to",
+                "destinationId" : "109",
+                "id" : "111",
+                "linkedRelationshipId" : "64",
+                "sourceId" : "100"
+              }, {
+                "description" : "Writes to",
+                "destinationId" : "112",
+                "id" : "114",
+                "linkedRelationshipId" : "64",
+                "sourceId" : "100"
+              }, {
+                "description" : "Reads from and writes to",
+                "destinationId" : "116",
+                "id" : "119",
+                "linkedRelationshipId" : "63",
+                "sourceId" : "100"
+              }, {
+                "description" : "Reads from and writes to",
+                "destinationId" : "120",
+                "id" : "123",
+                "linkedRelationshipId" : "63",
+                "sourceId" : "100"
+              } ],
+              "tags" : "Container Instance"
+            } ],
+            "environment" : "Deployment",
+            "id" : "91",
+            "instances" : "1",
+            "name" : "EKS Cluster",
+            "properties" : {
+              "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.50dff5f2-079e-4703-9e35-aca74f4984f4.289a1c89-1a9a-4c22-9c76-6797276cad48"
+            },
+            "tags" : "Element,Deployment Node,Amazon Web Services - Elastic Container Kubernetes"
+          } ],
+          "environment" : "Deployment",
+          "id" : "90",
+          "instances" : "1",
+          "name" : "Amazon EKS",
+          "properties" : {
+            "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.50dff5f2-079e-4703-9e35-aca74f4984f4"
+          },
+          "tags" : "Element,Deployment Node,Amazon Web Services - Elastic Kubernetes Service"
+        }, {
+          "containerInstances" : [ {
+            "containerId" : "41",
+            "deploymentGroups" : [ "Default" ],
+            "environment" : "Deployment",
+            "id" : "109",
+            "instanceId" : 1,
+            "properties" : {
+              "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.2b2b3397-bcb2-4bc5-a677-2231320b4463.primary"
+            },
+            "tags" : "Container Instance"
+          }, {
+            "containerId" : "41",
+            "deploymentGroups" : [ "Default" ],
+            "environment" : "Deployment",
+            "id" : "112",
+            "instanceId" : 2,
+            "properties" : {
+              "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.2b2b3397-bcb2-4bc5-a677-2231320b4463.secondary"
+            },
+            "tags" : "Container Instance"
+          } ],
+          "environment" : "Deployment",
+          "id" : "108",
+          "instances" : "1",
+          "name" : "Elastic Search",
+          "properties" : {
+            "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.2b2b3397-bcb2-4bc5-a677-2231320b4463"
+          },
+          "tags" : "Element,Deployment Node"
+        }, {
+          "containerInstances" : [ {
+            "containerId" : "32",
+            "deploymentGroups" : [ "Default" ],
+            "environment" : "Deployment",
+            "id" : "116",
+            "instanceId" : 1,
+            "properties" : {
+              "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.b777bd5a-3588-4215-a959-d55beefc0448.writerinstance"
+            },
+            "tags" : "Container Instance"
+          }, {
+            "containerId" : "32",
+            "deploymentGroups" : [ "Default" ],
+            "environment" : "Deployment",
+            "id" : "120",
+            "instanceId" : 2,
+            "properties" : {
+              "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.b777bd5a-3588-4215-a959-d55beefc0448.readerinstance"
+            },
+            "tags" : "Container Instance"
+          } ],
+          "environment" : "Deployment",
+          "id" : "115",
+          "instances" : "1",
+          "name" : "Amazon RDS",
+          "properties" : {
+            "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.b777bd5a-3588-4215-a959-d55beefc0448"
+          },
+          "tags" : "Element,Deployment Node,Amazon Web Services - RDS"
+        } ],
+        "environment" : "Deployment",
+        "id" : "87",
+        "infrastructureNodes" : [ {
+          "environment" : "Deployment",
+          "id" : "88",
+          "name" : "Elastic Load Balancer",
+          "properties" : {
+            "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.elb"
+          },
+          "relationships" : [ {
+            "description" : "Forwards requests to",
+            "destinationId" : "93",
+            "id" : "105",
+            "sourceId" : "88",
+            "tags" : "Relationship",
+            "technology" : "HTTPS"
+          } ],
+          "tags" : "Element,Infrastructure Node,Amazon Web Services - Elastic Load Balancing Application Load Balancer"
+        }, {
+          "environment" : "Deployment",
+          "id" : "89",
+          "name" : "SNS Topics",
+          "properties" : {
+            "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245.sns"
+          },
+          "relationships" : [ {
+            "description" : "Queues Requests",
+            "destinationId" : "100",
+            "id" : "107",
+            "sourceId" : "89",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Infrastructure Node,Amazon Web Services - Simple Notification Service Topic"
+        } ],
+        "instances" : "1",
+        "name" : "US-East-1",
+        "properties" : {
+          "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.be621b7a-56c0-4e43-9f52-5d20473fe245"
+        },
+        "tags" : "Element,Deployment Node"
+      } ],
+      "environment" : "Deployment",
+      "id" : "85",
+      "infrastructureNodes" : [ {
+        "environment" : "Deployment",
+        "id" : "86",
+        "name" : "Route 53",
+        "properties" : {
+          "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093.route53"
+        },
+        "relationships" : [ {
+          "description" : "Forwards requests to",
+          "destinationId" : "88",
+          "id" : "104",
+          "sourceId" : "86",
+          "tags" : "Relationship",
+          "technology" : "HTTPS"
+        } ],
+        "tags" : "Element,Infrastructure Node,Amazon Web Services - Route 53,DNS"
+      } ],
+      "instances" : "1",
+      "name" : "Amazon Web Services",
+      "properties" : {
+        "structurizr.dsl.identifier" : "live.55464953-73ef-48aa-b824-f8cb9d23e093"
+      },
+      "tags" : "Element,Deployment Node"
+    } ],
+    "people" : [ {
+      "id" : "1",
+      "location" : "Unspecified",
+      "name" : "User",
+      "properties" : {
+        "structurizr.dsl.identifier" : "u"
+      },
+      "relationships" : [ {
+        "description" : "Uses",
+        "destinationId" : "8",
+        "id" : "42",
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Uses",
+        "destinationId" : "7",
+        "id" : "43",
+        "linkedRelationshipId" : "42",
+        "sourceId" : "1"
+      }, {
+        "description" : "Authenticates",
+        "destinationId" : "9",
+        "id" : "44",
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "id" : "2",
+      "location" : "Unspecified",
+      "name" : "Employee",
+      "properties" : {
+        "structurizr.dsl.identifier" : "e"
+      },
+      "relationships" : [ {
+        "description" : "Uses",
+        "destinationId" : "20",
+        "id" : "49",
+        "sourceId" : "2",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Uses",
+        "destinationId" : "7",
+        "id" : "50",
+        "linkedRelationshipId" : "49",
+        "sourceId" : "2"
+      }, {
+        "description" : "Authenticates",
+        "destinationId" : "21",
+        "id" : "51",
+        "sourceId" : "2",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Person"
+    } ],
+    "softwareSystems" : [ {
+      "documentation" : { },
+      "id" : "3",
+      "location" : "Unspecified",
+      "name" : "Marketing Automation Platform",
+      "properties" : {
+        "structurizr.dsl.identifier" : "marketing-platform"
+      },
+      "tags" : "Element,Software System"
+    }, {
+      "documentation" : { },
+      "id" : "4",
+      "location" : "Unspecified",
+      "name" : "Customer Support Platform",
+      "properties" : {
+        "structurizr.dsl.identifier" : "support-platform"
+      },
+      "tags" : "Element,Software System"
+    }, {
+      "documentation" : { },
+      "id" : "5",
+      "location" : "Unspecified",
+      "name" : "Shipping Provider",
+      "properties" : {
+        "structurizr.dsl.identifier" : "shipping-platform"
+      },
+      "tags" : "Element,Software System"
+    }, {
+      "documentation" : { },
+      "id" : "6",
+      "location" : "Unspecified",
+      "name" : "Payment Provider",
+      "properties" : {
+        "structurizr.dsl.identifier" : "payment-platform"
+      },
+      "tags" : "Element,Software System"
+    }, {
+      "containers" : [ {
+        "components" : [ {
+          "documentation" : { },
+          "id" : "9",
+          "name" : "Authentication",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.ui.auth"
+          },
+          "relationships" : [ {
+            "description" : "Authenticates",
+            "destinationId" : "14",
+            "id" : "45",
+            "sourceId" : "9",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Authenticates",
+            "destinationId" : "13",
+            "id" : "46",
+            "linkedRelationshipId" : "45",
+            "sourceId" : "9"
+          } ],
+          "tags" : "Element,Component"
+        }, {
+          "documentation" : { },
+          "id" : "10",
+          "name" : "Profile Management",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.ui.profile"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "documentation" : { },
+          "id" : "11",
+          "name" : "Notifications",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.ui.notifications"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "documentation" : { },
+          "id" : "12",
+          "name" : "Order Information",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.ui.order"
+          },
+          "tags" : "Element,Component"
+        } ],
+        "documentation" : { },
+        "id" : "8",
+        "name" : "E-Commerce UI",
+        "properties" : {
+          "structurizr.dsl.identifier" : "s.ui"
+        },
+        "relationships" : [ {
+          "description" : "Authenticates",
+          "destinationId" : "14",
+          "id" : "47",
+          "linkedRelationshipId" : "45",
+          "sourceId" : "8"
+        }, {
+          "description" : "Authenticates",
+          "destinationId" : "13",
+          "id" : "48",
+          "linkedRelationshipId" : "45",
+          "sourceId" : "8"
+        }, {
+          "description" : "Queries",
+          "destinationId" : "13",
+          "id" : "60",
+          "sourceId" : "8",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,Amazon Web Services - Elastic Container Kubernetes",
+        "technology" : "ExpressJS"
+      }, {
+        "components" : [ {
+          "documentation" : { },
+          "id" : "14",
+          "name" : "Authentication",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.api.auth"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "documentation" : { },
+          "id" : "15",
+          "name" : "Profile Management",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.api.profile"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "documentation" : { },
+          "id" : "16",
+          "name" : "Notifications",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.api.notifications"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "documentation" : { },
+          "id" : "17",
+          "name" : "Order Information",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.api.order"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "documentation" : { },
+          "id" : "18",
+          "name" : "Apply Promotions",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.api.promotion"
+          },
+          "relationships" : [ {
+            "description" : "Apply Promotions",
+            "destinationId" : "39",
+            "id" : "69",
+            "sourceId" : "18",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Apply Promotions",
+            "destinationId" : "33",
+            "id" : "70",
+            "linkedRelationshipId" : "69",
+            "sourceId" : "18"
+          } ],
+          "tags" : "Element,Component"
+        }, {
+          "documentation" : { },
+          "id" : "19",
+          "name" : "Apply Discounts",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.api.discount"
+          },
+          "relationships" : [ {
+            "description" : "Apply Discounts",
+            "destinationId" : "33",
+            "id" : "56",
+            "sourceId" : "19",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component"
+        } ],
+        "documentation" : { },
+        "id" : "13",
+        "name" : "E-Commerce API",
+        "properties" : {
+          "structurizr.dsl.identifier" : "s.api"
+        },
+        "relationships" : [ {
+          "description" : "Apply Discounts",
+          "destinationId" : "33",
+          "id" : "57",
+          "linkedRelationshipId" : "56",
+          "sourceId" : "13"
+        }, {
+          "description" : "Reads from and writes to",
+          "destinationId" : "32",
+          "id" : "59",
+          "sourceId" : "13",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Reads from",
+          "destinationId" : "41",
+          "id" : "61",
+          "sourceId" : "13",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Submit Jobs",
+          "destinationId" : "33",
+          "id" : "62",
+          "sourceId" : "13",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Calculate Taxes",
+          "destinationId" : "35",
+          "id" : "67",
+          "sourceId" : "13",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Apply Coupon Codes",
+          "destinationId" : "36",
+          "id" : "68",
+          "sourceId" : "13",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Apply Promotions",
+          "destinationId" : "39",
+          "id" : "71",
+          "linkedRelationshipId" : "69",
+          "sourceId" : "13"
+        }, {
+          "description" : "Submit order payment",
+          "destinationId" : "37",
+          "id" : "72",
+          "sourceId" : "13",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Submit order shipping",
+          "destinationId" : "34",
+          "id" : "73",
+          "sourceId" : "13",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Process Support Requests",
+          "destinationId" : "4",
+          "id" : "83",
+          "sourceId" : "13",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,Amazon Web Services - Elastic Container Kubernetes",
+        "technology" : "React/NextJS"
+      }, {
+        "components" : [ {
+          "description" : "Handles Authentication",
+          "documentation" : { },
+          "id" : "21",
+          "name" : "Authentication",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.adminui.auth"
+          },
+          "relationships" : [ {
+            "description" : "Authenticates",
+            "destinationId" : "27",
+            "id" : "52",
+            "sourceId" : "21",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Authenticates",
+            "destinationId" : "26",
+            "id" : "53",
+            "linkedRelationshipId" : "52",
+            "sourceId" : "21"
+          } ],
+          "tags" : "Element,Component"
+        }, {
+          "description" : "CRUD Operations on products",
+          "documentation" : { },
+          "id" : "22",
+          "name" : "Products",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.adminui.products"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "description" : "CRUD Operations on promotions",
+          "documentation" : { },
+          "id" : "23",
+          "name" : "Promotions",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.adminui.promotions"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "description" : "CRUD operations on discounts",
+          "documentation" : { },
+          "id" : "24",
+          "name" : "Discount",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.adminui.discounts"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "description" : "Configuration management",
+          "documentation" : { },
+          "id" : "25",
+          "name" : "Configuration",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.adminui.configuration"
+          },
+          "tags" : "Element,Component"
+        } ],
+        "documentation" : { },
+        "id" : "20",
+        "name" : "Admin UI",
+        "properties" : {
+          "structurizr.dsl.identifier" : "s.adminui"
+        },
+        "relationships" : [ {
+          "description" : "Authenticates",
+          "destinationId" : "27",
+          "id" : "54",
+          "linkedRelationshipId" : "52",
+          "sourceId" : "20"
+        }, {
+          "description" : "Authenticates",
+          "destinationId" : "26",
+          "id" : "55",
+          "linkedRelationshipId" : "52",
+          "sourceId" : "20"
+        }, {
+          "description" : "Queries",
+          "destinationId" : "26",
+          "id" : "58",
+          "sourceId" : "20",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,Amazon Web Services - Elastic Container Kubernetes",
+        "technology" : "ExpressJS"
+      }, {
+        "components" : [ {
+          "description" : "Handles Authentication",
+          "documentation" : { },
+          "id" : "27",
+          "name" : "Authentication",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.adminapi.auth"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "description" : "CRUD Operations on products",
+          "documentation" : { },
+          "id" : "28",
+          "name" : "Products",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.adminapi.products"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "description" : "CRUD Operations on promotions",
+          "documentation" : { },
+          "id" : "29",
+          "name" : "Promotions",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.adminapi.promotions"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "description" : "CRUD operations on discounts",
+          "documentation" : { },
+          "id" : "30",
+          "name" : "Discount",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.adminapi.discounts"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "description" : "Configuration management",
+          "documentation" : { },
+          "id" : "31",
+          "name" : "Configuration",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.adminapi.configuration"
+          },
+          "tags" : "Element,Component"
+        } ],
+        "documentation" : { },
+        "id" : "26",
+        "name" : "Admin API",
+        "properties" : {
+          "structurizr.dsl.identifier" : "s.adminapi"
+        },
+        "relationships" : [ {
+          "description" : "Reads from and writes to",
+          "destinationId" : "32",
+          "id" : "65",
+          "sourceId" : "26",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Submit Jobs",
+          "destinationId" : "33",
+          "id" : "66",
+          "sourceId" : "26",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,Amazon Web Services - Elastic Container Kubernetes",
+        "technology" : "React/NextJS"
+      }, {
+        "documentation" : { },
+        "id" : "32",
+        "name" : "Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "s.database"
+        },
+        "tags" : "Element,Container,Amazon Web Services - RDS",
+        "technology" : "Relational database schema"
+      }, {
+        "components" : [ {
+          "description" : "Handles shipping",
+          "documentation" : { },
+          "id" : "34",
+          "name" : "Shipping Service",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.backend.shipping"
+          },
+          "relationships" : [ {
+            "description" : "Process Shipping",
+            "destinationId" : "5",
+            "id" : "74",
+            "sourceId" : "34",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Spring Boot"
+        }, {
+          "description" : "Applies tax rules",
+          "documentation" : { },
+          "id" : "35",
+          "name" : "Tax Calculation Service",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.backend.tax"
+          },
+          "tags" : "Element,Component",
+          "technology" : "Spring Boot"
+        }, {
+          "description" : "Handles discount logic",
+          "documentation" : { },
+          "id" : "36",
+          "name" : "Discount Service",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.backend.discount"
+          },
+          "tags" : "Element,Component",
+          "technology" : "Spring Boot"
+        }, {
+          "description" : "Handles payments",
+          "documentation" : { },
+          "id" : "37",
+          "name" : "Payment Service",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.backend.payment"
+          },
+          "relationships" : [ {
+            "description" : "Process Payment",
+            "destinationId" : "6",
+            "id" : "77",
+            "sourceId" : "37",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Spring Boot"
+        }, {
+          "description" : "Generates reports",
+          "documentation" : { },
+          "id" : "38",
+          "name" : "Reports Service",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.backend.report"
+          },
+          "tags" : "Element,Component",
+          "technology" : "Spring Boot"
+        }, {
+          "description" : "Handles promotions",
+          "documentation" : { },
+          "id" : "39",
+          "name" : "Promotion Service",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.backend.promotion"
+          },
+          "tags" : "Element,Component",
+          "technology" : "Spring Boot"
+        }, {
+          "description" : "Sends Notifications",
+          "documentation" : { },
+          "id" : "40",
+          "name" : "Notification Service",
+          "properties" : {
+            "structurizr.dsl.identifier" : "s.backend.notification"
+          },
+          "relationships" : [ {
+            "description" : "Send Updates to Users",
+            "destinationId" : "3",
+            "id" : "80",
+            "sourceId" : "40",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Spring Boot"
+        } ],
+        "documentation" : { },
+        "id" : "33",
+        "name" : "Backend",
+        "properties" : {
+          "structurizr.dsl.identifier" : "s.backend"
+        },
+        "relationships" : [ {
+          "description" : "Reads from and writes to",
+          "destinationId" : "32",
+          "id" : "63",
+          "sourceId" : "33",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Writes to",
+          "destinationId" : "41",
+          "id" : "64",
+          "sourceId" : "33",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Process Shipping",
+          "destinationId" : "5",
+          "id" : "75",
+          "linkedRelationshipId" : "74",
+          "sourceId" : "33"
+        }, {
+          "description" : "Process Payment",
+          "destinationId" : "6",
+          "id" : "78",
+          "linkedRelationshipId" : "77",
+          "sourceId" : "33"
+        }, {
+          "description" : "Send Updates to Users",
+          "destinationId" : "3",
+          "id" : "81",
+          "linkedRelationshipId" : "80",
+          "sourceId" : "33"
+        } ],
+        "tags" : "Element,Container,Amazon Web Services - Elastic Container Kubernetes",
+        "technology" : "Spring Boot"
+      }, {
+        "documentation" : { },
+        "id" : "41",
+        "name" : "Elastic Search",
+        "properties" : {
+          "structurizr.dsl.identifier" : "s.opensearch"
+        },
+        "tags" : "Element,Container,Amazon Web Services - OpenSearch Service",
+        "technology" : "Elastic Search"
+      } ],
+      "documentation" : {
+        "decisions" : [ {
+          "content" : "# Use open source e-commerce platform\nDate: 2025-09-10\n\n## Status\nProposed\n\n## Context\nOpen source e-commerce platform (like OpenCart) has most of the functionality that is mentioned in these documents. It can enable us to release this product quicker while understanding the system and buliding more complicated functionality later. \n\n![](embed:UI)\n\n## Alternatives\n* WooCommerce \n* OpoeCart \n* Magento\n\n## Decision\n__TBD__\n\n## Consequences\n* Need to learn an open-source system thaat is writeen in a completely different language and architecture. \n* Need to write plugings to transfer data between internal and external systems. \n* Evolving data models will be difficult. \n* Customer specific implementations that involve updating internals of the system can get complicate.d \n",
+          "date" : "2025-09-10T00:00:00Z",
+          "format" : "Markdown",
+          "id" : "1",
+          "status" : "Proposed",
+          "title" : " Use open source e-commerce platform"
+        }, {
+          "content" : "# Communicating between API and Backend\nDate: 2025-09-11\n\n## Status \nAccepted\n\n## Context \nDeciding the communication mechanism beween E-Commerce API and Backend containers.\n\n![](embed:Container)\n\n## Alternatives\n### APIs\nPros: \n* Less infrastructure overhead. \n* Scaling based on memory and CPU. \n* Tight coupling.\n\nCons: \n* Authentication and authorization should be setup. \n* Resiliancy needs to be built.\n\n### RPCs\nPros: \n* Less infrastructure overhead. \n\nCons:\n* Tight coupling. \n* Scaling could be a challenge.\n\n\n## Desicion\nUse message queues for communication\n\nPros: \n* Containers can scale based on the number of messages. \n* No data loss if containers are down. \n* Messages can be retried if needed. \n* Loose coupling - Backend can evolve independently of the API. \n* Easy to add integrations between other containers.\n\nCons: \n* More infrastructure components to maintain.\n* Latency is introduced by added infrastructure overhead.\n* Historical analysis on message consumption can get complicated.\n",
+          "date" : "2025-09-11T00:00:00Z",
+          "format" : "Markdown",
+          "id" : "2",
+          "status" : "Accepted",
+          "title" : " Communicating between API and Backend"
+        } ],
+        "sections" : [ {
+          "content" : "# Green Apple E-Commerce System \n## Context \nGreen Apple, a fast- growing brick-and-mortar store business that specializes in selling personalized health and wellness products, has recently selected Bold Orange to envision and create a new ecommerce experience. To stay competitive in the market, Green Apple has decided to implement a new digital delivery capability and e-commerce distribution channel. The goal is to have a leading customer experience, and from a technology perspective, to identify and select a Content Management System (CMS), Customer Data Platform (CDP), Marketing Automation, and integrated e-commerce capabilities seamlessly.\n\n![](embed:Context)\n\n## E-Commerce Database\nThis is the relational database that holds the necessary data about products, promotions and other things that are being used by the e-commerce website. This database will be multi-node and multi-region with a single writer instances and multipe reader instances across multiple regions. Reader instances can also be used to connect to a reporting service that will allow us to write and display the results of aggregate queries.\n\nFurther scope could include splitting this database into smaller databases to be used by microservices thus avoiding a single point of failure and enabling the ability to scale individual components.\n\n## Product Search Database\nA text based document storage database (like elastic search) that will enable the system to run fast text based search on the products. This database will also be multi-region and multi-node allowing the system to scale as a whole. \n\n## Containers\nThis system will be using a Kubernetes based hosting (like EKS) with multiple clusters and pods handling the user and backend traffic. \n\n![](embed:Container)\n\n### Anatomy of containers\nContainers are split into a user facing interface and an employee facing interface. This will enable us to make sure that employees can maintain the system without having to worry about adding additional load to the user facing system. This will also enable the employee facing containers to reside behind a VPN network and add a specialized authentication layer for employees.\n\nUser facing UI component that holds different user facing components.\n![](embed:UI)\nComponents with the Admin UI container. This UI will be used to interact with the Admin API and will handle authentication, product management, promotion management etc.\n![](embed:AdminUI)\nBackend component that is reponsible for interacting with most of the external systems and also tracking payments, taxes, shipping etc. This backend service will also integrate with external systems to manage marketing tools, notifications and maintaining aggregate customer stats.\n![](embed:Backend)\n\n\n## Messaging Infrastructure\nThe backend service will involve scheduled jobs and message based triggers through a message broker (like SNS + SQS). This will enable the API to submit jobs to the backend container for processing and the backend service to asynchronously process and act on these messages. \n\nFor example, the tax calculation service could be done by submitting a message with the following payload: \n```\n{\n  \"order_id\": \"1234\",\n  \"calculation_type\": \"tax\"\n}\n```\n\n\n",
+          "filename" : "001-context.md",
+          "format" : "Markdown",
+          "order" : 1,
+          "title" : ""
+        }, {
+          "content" : "## Deployment\n![](embed:Deployment-001)\n\n* Global Route 53 entry that splits traffic between region specific elastic load balancer.\n* EKS Clusters are used to host the different containers. \n* There is an SNS topic and SQS queue for communication between API and Backend containers. \n* Globally available database with reader and writer nodes. \n* Elastic Search instances that are globally available with reader and writer nodes.",
+          "filename" : "002-deployment.md",
+          "format" : "Markdown",
+          "order" : 2,
+          "title" : ""
+        }, {
+          "content" : "## Quality Attributes\nQuality attribtes for Green Apple E-Commerce System are as follows. \n### Security\n* All customer data is stored in a secure manner. \n  * All the data that is stored in the database will be encrypted by KMS keys.\n  * The data will only be decrypted on the front-end only after validating that the customer is logged in. \n  * If the session is inactive, the data is automatically hidden from the UI and a new request will require generating a new set of decryption keys.\n* Payment information handled securely.\n  * Payment is processed through trusted 3rd party payment providers. \n  * Payment information except for information needed by support team to verify payment methods will not be stored in the database.\n* HTTPS communication\n  * Communication between services that happen over HTTP are encrypted with strong encryption algorithms.\n* Vault storage. \n  * Sensitive information like API keys etc. are stored in a secure vault (like AWS Secret Manager) and encrypted with KMS keys that are secured through strong IAM policies.\n\n### Performance\n* Page load times are fast for customer. \n  * All static data are cached behind a CDN (like AWS CloudFront). \n  * Dynamic data is cached in a short lived caching layer (like Redis)\n  * Queries are distributed between writer and reader nodes in the database. \n  * Database tables are sharded if necessary by choosing the right sharding key.\n* Nightly performance tests\n  * Performance tests on the user facing site happens nightly with stats monitored and tickets are automatically created.\n* EKS Scaling setup\n  * EKS pods are configured to add more pods based on CPU and memory usage. \n  * Backend EKS pods are configured to scale up and down based on the number of messages that need to be processed.\n* Database scaling\n  * Database will automatically add reader nodes when needed to distribute traffic.\n\n### Availability\n* Resources are deployed across multiple regions. \n* Feature flags are used for new features and use blue/green deployements. \n* Auto rollbacks for deployements are enabled if spikes in errors are noticed. \n* App automatically fails over to a secondary region if there are spikes in errors in the primary region.\n\n### Observability\n* Custom monitors are reported to a monitoring system (like Datadog). \n* Alerts are created on built-in and custom monitors. \n\n### Testability\n* Testing at all levels: \n  * Unit and integration testing done using reliable testing tools (like Jest or JUnit)\n  * Automated black box testing using reliable testing tools on lower environments (like Playwright or Cypress)\n  * Chaos testing on lower environment to uncover bottlenecs in infrastructure. \n  * Testing on infrastructure as code to validate that infrastructure is spun up as expected.\n* Quality gates: \n  * 90% unit test coverage - validated during build time. \n  * 90% scenario coverage - validated during build time.\n  * Blabk box testing will be run when code is promoted to staging or production and failures will cause the build to fail. \n  * Nightly chaos testing to identify bottle necks in infrastructure. \n\n",
+          "filename" : "003-quality-attributes.md",
+          "format" : "Markdown",
+          "order" : 3,
+          "title" : ""
+        }, {
+          "content" : "## Discusson Prompts\n* There are a lot of open source options avilable that handles most of the features of the e-commerce system (like WooCommerce). These systems also tie in with content management platform making managing content and store in one single place. However, these systems lack creating complicated promotion and adding separation of concerns might complicate the implementation. Maintaing data will be difficult and there needs to be a translation layer in-between to enable data flow between internal and external systems. \n* Microservice architecture would be a good choice especially with systems that need a lot of different independently scalable functions. However, maintaining microservices can easily get complicated. Moreover, microservices should resemble the team structure. If it is only one team handling this project, then microservices might be an overkill. ",
+          "filename" : "004-open-questions.md",
+          "format" : "Markdown",
+          "order" : 4,
+          "title" : ""
+        } ]
+      },
+      "id" : "7",
+      "location" : "Unspecified",
+      "name" : "Green Apple E-Commerce System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "s"
+      },
+      "relationships" : [ {
+        "description" : "Process Shipping",
+        "destinationId" : "5",
+        "id" : "76",
+        "linkedRelationshipId" : "74",
+        "sourceId" : "7"
+      }, {
+        "description" : "Process Payment",
+        "destinationId" : "6",
+        "id" : "79",
+        "linkedRelationshipId" : "77",
+        "sourceId" : "7"
+      }, {
+        "description" : "Send Updates to Users",
+        "destinationId" : "3",
+        "id" : "82",
+        "linkedRelationshipId" : "80",
+        "sourceId" : "7"
+      }, {
+        "description" : "Process Support Requests",
+        "destinationId" : "4",
+        "id" : "84",
+        "linkedRelationshipId" : "83",
+        "sourceId" : "7"
+      } ],
+      "tags" : "Element,Software System"
+    } ]
+  },
+  "name" : "Green Apple",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJHcmVlbiBBcHBsZSIgIkFyY2hpdGVjdHVyZSIgewogICAgIWlkZW50aWZpZXJzIGhpZXJhcmNoaWNhbAoKICAgIG1vZGVsIHsKICAgICAgICB1ID0gcGVyc29uICJVc2VyIgogICAgICAgIGUgPSBwZXJzb24gIkVtcGxveWVlIgogICAgICAgIG1hcmtldGluZy1wbGF0Zm9ybSA9IHNvZnR3YXJlU3lzdGVtICJNYXJrZXRpbmcgQXV0b21hdGlvbiBQbGF0Zm9ybSIKICAgICAgICBzdXBwb3J0LXBsYXRmb3JtID0gc29mdHdhcmVTeXN0ZW0gIkN1c3RvbWVyIFN1cHBvcnQgUGxhdGZvcm0iCiAgICAgICAgc2hpcHBpbmctcGxhdGZvcm0gPSBzb2Z0d2FyZVN5c3RlbSAiU2hpcHBpbmcgUHJvdmlkZXIiCiAgICAgICAgcGF5bWVudC1wbGF0Zm9ybSA9IHNvZnR3YXJlU3lzdGVtICJQYXltZW50IFByb3ZpZGVyIgogICAgICAgIHMgPSBzb2Z0d2FyZVN5c3RlbSAiR3JlZW4gQXBwbGUgRS1Db21tZXJjZSBTeXN0ZW0iIHsKICAgICAgICAgICAgIWRvY3MgZG9jcwogICAgICAgICAgICAhYWRycyBhZHJzCiAgICAgICAgICAgIHVpID0gY29udGFpbmVyICJFLUNvbW1lcmNlIFVJIiAiIiAiRXhwcmVzc0pTIiB7CiAgICAgICAgICAgICAgICBhdXRoID0gY29tcG9uZW50ICJBdXRoZW50aWNhdGlvbiIKICAgICAgICAgICAgICAgIHByb2ZpbGUgPSBjb21wb25lbnQgIlByb2ZpbGUgTWFuYWdlbWVudCIKICAgICAgICAgICAgICAgIG5vdGlmaWNhdGlvbnMgPSBjb21wb25lbnQgIk5vdGlmaWNhdGlvbnMiCiAgICAgICAgICAgICAgICBvcmRlciA9IGNvbXBvbmVudCAiT3JkZXIgSW5mb3JtYXRpb24iCiAgICAgICAgCiAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRWxhc3RpYyBDb250YWluZXIgS3ViZXJuZXRlcyIKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgYXBpID0gY29udGFpbmVyICJFLUNvbW1lcmNlIEFQSSIgIiIgIlJlYWN0L05leHRKUyIgewogICAgICAgICAgICAgICAgYXV0aCA9IGNvbXBvbmVudCAiQXV0aGVudGljYXRpb24iCiAgICAgICAgICAgICAgICBwcm9maWxlID0gY29tcG9uZW50ICJQcm9maWxlIE1hbmFnZW1lbnQiCiAgICAgICAgICAgICAgICBub3RpZmljYXRpb25zID0gY29tcG9uZW50ICJOb3RpZmljYXRpb25zIgogICAgICAgICAgICAgICAgb3JkZXIgPSBjb21wb25lbnQgIk9yZGVyIEluZm9ybWF0aW9uIgogICAgICAgICAgICAgICAgcHJvbW90aW9uID0gY29tcG9uZW50ICJBcHBseSBQcm9tb3Rpb25zIgogICAgICAgICAgICAgICAgZGlzY291bnQgPSBjb21wb25lbnQgIkFwcGx5IERpc2NvdW50cyIKICAgICAgICAKICAgICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBFbGFzdGljIENvbnRhaW5lciBLdWJlcm5ldGVzIgogICAgICAgICAgICB9CiAgICAgICAgCiAgICAgICAgICAgIGFkbWludWkgPSBjb250YWluZXIgIkFkbWluIFVJIiAiIiAiRXhwcmVzc0pTIiB7CiAgICAgICAgICAgICAgICBhdXRoID0gY29tcG9uZW50ICJBdXRoZW50aWNhdGlvbiIgIkhhbmRsZXMgQXV0aGVudGljYXRpb24iCiAgICAgICAgICAgICAgICBwcm9kdWN0cyA9IGNvbXBvbmVudCAiUHJvZHVjdHMiICJDUlVEIE9wZXJhdGlvbnMgb24gcHJvZHVjdHMiCiAgICAgICAgICAgICAgICBwcm9tb3Rpb25zID0gY29tcG9uZW50ICJQcm9tb3Rpb25zIiAiQ1JVRCBPcGVyYXRpb25zIG9uIHByb21vdGlvbnMiCiAgICAgICAgICAgICAgICBkaXNjb3VudHMgPSBjb21wb25lbnQgIkRpc2NvdW50IiAiQ1JVRCBvcGVyYXRpb25zIG9uIGRpc2NvdW50cyIKICAgICAgICAgICAgICAgIGNvbmZpZ3VyYXRpb24gPSBjb21wb25lbnQgIkNvbmZpZ3VyYXRpb24iICJDb25maWd1cmF0aW9uIG1hbmFnZW1lbnQiCiAgICAgICAgCiAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRWxhc3RpYyBDb250YWluZXIgS3ViZXJuZXRlcyIKICAgICAgICAgICAgfQogICAgICAgIAogICAgICAgICAgICBhZG1pbmFwaSA9IGNvbnRhaW5lciAiQWRtaW4gQVBJIiAiIiAiUmVhY3QvTmV4dEpTIiB7CiAgICAgICAgICAgICAgICBhdXRoID0gY29tcG9uZW50ICJBdXRoZW50aWNhdGlvbiIgIkhhbmRsZXMgQXV0aGVudGljYXRpb24iCiAgICAgICAgICAgICAgICBwcm9kdWN0cyA9IGNvbXBvbmVudCAiUHJvZHVjdHMiICJDUlVEIE9wZXJhdGlvbnMgb24gcHJvZHVjdHMiCiAgICAgICAgICAgICAgICBwcm9tb3Rpb25zID0gY29tcG9uZW50ICJQcm9tb3Rpb25zIiAiQ1JVRCBPcGVyYXRpb25zIG9uIHByb21vdGlvbnMiCiAgICAgICAgICAgICAgICBkaXNjb3VudHMgPSBjb21wb25lbnQgIkRpc2NvdW50IiAiQ1JVRCBvcGVyYXRpb25zIG9uIGRpc2NvdW50cyIKICAgICAgICAgICAgICAgIGNvbmZpZ3VyYXRpb24gPSBjb21wb25lbnQgIkNvbmZpZ3VyYXRpb24iICJDb25maWd1cmF0aW9uIG1hbmFnZW1lbnQiCiAgICAgICAgCiAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRWxhc3RpYyBDb250YWluZXIgS3ViZXJuZXRlcyIKICAgICAgICAgICAgfQogICAgICAgIAogICAgICAgICAgICBkYXRhYmFzZSA9IGNvbnRhaW5lciAiRGF0YWJhc2UiICIiICJSZWxhdGlvbmFsIGRhdGFiYXNlIHNjaGVtYSIgewogICAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFJEUyIKICAgICAgICAgICAgfQogICAgICAgIAogICAgICAgICAgICBiYWNrZW5kID0gY29udGFpbmVyICJCYWNrZW5kIiAiIiAiU3ByaW5nIEJvb3QiIHsKICAgICAgICAgICAgICAgIHNoaXBwaW5nID0gY29tcG9uZW50ICJTaGlwcGluZyBTZXJ2aWNlIiAiSGFuZGxlcyBzaGlwcGluZyIgIlNwcmluZyBCb290IgogICAgICAgICAgICAgICAgdGF4ID0gY29tcG9uZW50ICJUYXggQ2FsY3VsYXRpb24gU2VydmljZSIgIkFwcGxpZXMgdGF4IHJ1bGVzIiAiU3ByaW5nIEJvb3QiCiAgICAgICAgICAgICAgICBkaXNjb3VudCA9IGNvbXBvbmVudCAiRGlzY291bnQgU2VydmljZSIgIkhhbmRsZXMgZGlzY291bnQgbG9naWMiICJTcHJpbmcgQm9vdCIKICAgICAgICAgICAgICAgIHBheW1lbnQgPSBjb21wb25lbnQgIlBheW1lbnQgU2VydmljZSIgIkhhbmRsZXMgcGF5bWVudHMiICJTcHJpbmcgQm9vdCIKICAgICAgICAgICAgICAgIHJlcG9ydCA9IGNvbXBvbmVudCAiUmVwb3J0cyBTZXJ2aWNlIiAiR2VuZXJhdGVzIHJlcG9ydHMiICJTcHJpbmcgQm9vdCIKICAgICAgICAgICAgICAgIHByb21vdGlvbiA9IGNvbXBvbmVudCAiUHJvbW90aW9uIFNlcnZpY2UiICJIYW5kbGVzIHByb21vdGlvbnMiICJTcHJpbmcgQm9vdCIKICAgICAgICAgICAgICAgIG5vdGlmaWNhdGlvbiA9IGNvbXBvbmVudCAiTm90aWZpY2F0aW9uIFNlcnZpY2UiICJTZW5kcyBOb3RpZmljYXRpb25zIiAiU3ByaW5nIEJvb3QiCiAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRWxhc3RpYyBDb250YWluZXIgS3ViZXJuZXRlcyIKICAgICAgICAgICAgfQogICAgICAgIAogICAgICAgICAgICBvcGVuc2VhcmNoID0gY29udGFpbmVyICJFbGFzdGljIFNlYXJjaCIgIiIgIkVsYXN0aWMgU2VhcmNoIiB7CiAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gT3BlblNlYXJjaCBTZXJ2aWNlIgogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIAogICAgICAgIHUgLT4gcy51aSAiVXNlcyIKICAgICAgICB1IC0+IHMudWkuYXV0aCAiQXV0aGVudGljYXRlcyIKICAgICAgICBzLnVpLmF1dGggLT4gcy5hcGkuYXV0aCAiQXV0aGVudGljYXRlcyIKICAgICAgICAKICAgICAgICBlIC0+IHMuYWRtaW51aSAiVXNlcyIKICAgICAgICBlIC0+IHMuYWRtaW51aS5hdXRoICJBdXRoZW50aWNhdGVzIgogICAgICAgIHMuYWRtaW51aS5hdXRoIC0+IHMuYWRtaW5hcGkuYXV0aCAiQXV0aGVudGljYXRlcyIKICAgICAgICAKICAgICAgICBzLmFwaS5kaXNjb3VudCAtPiBzLmJhY2tlbmQgIkFwcGx5IERpc2NvdW50cyIKICAgICAgICAKICAgICAgICBzLmFkbWludWkgLT4gcy5hZG1pbmFwaSAiUXVlcmllcyIKICAgICAgICBzLmFwaSAtPiBzLmRhdGFiYXNlICJSZWFkcyBmcm9tIGFuZCB3cml0ZXMgdG8iCiAgICAgICAgcy51aSAtPiBzLmFwaSAiUXVlcmllcyIKICAgICAgICBzLmFwaSAtPiBzLm9wZW5zZWFyY2ggIlJlYWRzIGZyb20iCiAgICAgICAgcy5hcGkgLT4gcy5iYWNrZW5kICJTdWJtaXQgSm9icyIKICAgICAgICBzLmJhY2tlbmQgLT4gcy5kYXRhYmFzZSAiUmVhZHMgZnJvbSBhbmQgd3JpdGVzIHRvIgogICAgICAgIHMuYmFja2VuZCAtPiBzLm9wZW5zZWFyY2ggIldyaXRlcyB0byIKICAgICAgICBzLmFkbWluYXBpIC0+IHMuZGF0YWJhc2UgIlJlYWRzIGZyb20gYW5kIHdyaXRlcyB0byIKICAgICAgICBzLmFkbWluYXBpIC0+IHMuYmFja2VuZCAiU3VibWl0IEpvYnMiCiAgICAgICAgCiAgICAgICAgCiAgICAgICAgcy5hcGkgLT4gcy5iYWNrZW5kLnRheCAiQ2FsY3VsYXRlIFRheGVzIiAKICAgICAgICBzLmFwaSAtPiBzLmJhY2tlbmQuZGlzY291bnQgIkFwcGx5IENvdXBvbiBDb2RlcyIgCiAgICAgICAgcy5hcGkucHJvbW90aW9uIC0+IHMuYmFja2VuZC5wcm9tb3Rpb24gIkFwcGx5IFByb21vdGlvbnMiCiAgICAgICAgcy5hcGkgLT4gcy5iYWNrZW5kLnBheW1lbnQgIlN1Ym1pdCBvcmRlciBwYXltZW50IgogICAgICAgIHMuYXBpIC0+IHMuYmFja2VuZC5zaGlwcGluZyAiU3VibWl0IG9yZGVyIHNoaXBwaW5nIgogICAgICAgIAogICAgICAgIHMuYmFja2VuZC5zaGlwcGluZyAtPiBzaGlwcGluZy1wbGF0Zm9ybSAiUHJvY2VzcyBTaGlwcGluZyIKICAgICAgICBzLmJhY2tlbmQucGF5bWVudCAtPiBwYXltZW50LXBsYXRmb3JtICJQcm9jZXNzIFBheW1lbnQiCiAgICAgICAgcy5iYWNrZW5kLm5vdGlmaWNhdGlvbiAtPiBtYXJrZXRpbmctcGxhdGZvcm0gIlNlbmQgVXBkYXRlcyB0byBVc2VycyIKICAgICAgICBzLmFwaSAtPiBzdXBwb3J0LXBsYXRmb3JtICJQcm9jZXNzIFN1cHBvcnQgUmVxdWVzdHMiCiAgICAgICAgCiAgICAgICAgbGl2ZSA9IGRlcGxveW1lbnRFbnZpcm9ubWVudCAiRGVwbG95bWVudCIgewogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiQW1hem9uIFdlYiBTZXJ2aWNlcyIgewogICAgICAgICAgICAgICAgcm91dGU1MyA9IGluZnJhc3RydWN0dXJlTm9kZSAiUm91dGUgNTMiIHsKICAgICAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gUm91dGUgNTMiLCAiRE5TIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIlVTLUVhc3QtMSIgewogICAgICAgICAgICAgICAgICAgIGVsYiA9IGluZnJhc3RydWN0dXJlTm9kZSAiRWxhc3RpYyBMb2FkIEJhbGFuY2VyIiB7CiAgICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRWxhc3RpYyBMb2FkIEJhbGFuY2luZyBBcHBsaWNhdGlvbiBMb2FkIEJhbGFuY2VyIgogICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgc25zID0gaW5mcmFzdHJ1Y3R1cmVOb2RlICJTTlMgVG9waWNzIiB7CiAgICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBTaW1wbGUgTm90aWZpY2F0aW9uIFNlcnZpY2UgVG9waWMiCiAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiQW1hem9uIEVLUyIgewogICAgICAgICAgICAgICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiRUtTIENsdXN0ZXIiIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGFwaUluc3RhbmNlID0gY29udGFpbmVySW5zdGFuY2Ugcy5hcGkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHVpSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBzLnVpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBhZG1pblVpSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBzLmFkbWludWkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGFkbWluQXBpSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBzLmFkbWluYXBpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBiYWNrZW5kSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBzLmJhY2tlbmQKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBFbGFzdGljIENvbnRhaW5lciBLdWJlcm5ldGVzIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcm91dGU1MyAtPiBlbGIgIkZvcndhcmRzIHJlcXVlc3RzIHRvIiAiSFRUUFMiICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVsYiAtPiB1aUluc3RhbmNlICJGb3J3YXJkcyByZXF1ZXN0cyB0byIgIkhUVFBTIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgYXBpSW5zdGFuY2UgLT4gc25zICJRdWV1ZXMgUmVxdWVzdHMiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBzbnMgLT4gYmFja2VuZEluc3RhbmNlICJRdWV1ZXMgUmVxdWVzdHMiCiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEVsYXN0aWMgS3ViZXJuZXRlcyBTZXJ2aWNlIiAgCiAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiRWxhc3RpYyBTZWFyY2giIHsKICAgICAgICAgICAgICAgICAgICAgICAgcHJpbWFyeSA9IGNvbnRhaW5lckluc3RhbmNlIHMub3BlbnNlYXJjaAogICAgICAgICAgICAgICAgICAgICAgICBzZWNvbmRhcnkgPSBjb250YWluZXJJbnN0YW5jZSBzLm9wZW5zZWFyY2gKICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBbWF6b24gUkRTIiB7CiAgICAgICAgICAgICAgICAgICAgICAgIHdyaXRlckluc3RhbmNlID0gY29udGFpbmVySW5zdGFuY2Ugcy5kYXRhYmFzZSAiV3JpdGVyIEluc3RhbmNlIgogICAgICAgICAgICAgICAgICAgICAgICByZWFkZXJJbnN0YW5jZSA9IGNvbnRhaW5lckluc3RhbmNlIHMuZGF0YWJhc2UgIlJlYWRlciBJbnN0YW5jZSIKCiAgICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBSRFMiCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICBkZXBsb3ltZW50IHMgbGl2ZSB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvTGF5b3V0IGxyCiAgICAgICAgfQoKICAgICAgICBzeXN0ZW1Db250ZXh0IHMgIkNvbnRleHQiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9sYXlvdXQgbHIKICAgICAgICB9CgogICAgICAgIGNvbnRhaW5lciBzICJDb250YWluZXIiIHsKICAgICAgICAgICAgaW5jbHVkZSAqIAogICAgICAgICAgICBhdXRvbGF5b3V0IGxyCiAgICAgICAgfQoKICAgICAgICBjb21wb25lbnQgcy5iYWNrZW5kICJCYWNrZW5kIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvbGF5b3V0IGxyCiAgICAgICAgfQoKICAgICAgICBjb21wb25lbnQgcy5hZG1pbnVpICJBZG1pblVJIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKiAKICAgICAgICAgICAgYXV0b2xheW91dCBscgogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IHMudWkgIlVJIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKiAKICAgICAgICAgICAgYXV0b2xheW91dCBscgogICAgICAgIH0KCiAgICAgICAgZHluYW1pYyBzICJDaGVja291dEZsb3ciIHsKCiAgICAgICAgIHUgLT4gcy51aSAiU3VibWl0IGNoZWNrb3V0IgogICAgICAgICBzLnVpIC0+IHMuYXBpICJTdWJtaXQgb3JkZXIiCiAgICAgICAgIHMuYXBpIC0+IHMuYmFja2VuZCAiQXBwbHkgZGlzY291bnRzIgogICAgICAgICBzLmFwaSAtPiBzLmJhY2tlbmQgIkFwcGx5IFByb21vdGlvbnMiCiAgICAgICAgIHMuYmFja2VuZCAtPiBwYXltZW50LXBsYXRmb3JtICJQbGFjZSBIb2xkIgogICAgICAgICBzLmJhY2tlbmQgLT4gc2hpcHBpbmctcGxhdGZvcm0gIlN1Ym1pdCBTaGlwcGluZyIKICAgICAgICAgcy5iYWNrZW5kIC0+IG1hcmtldGluZy1wbGF0Zm9ybSAiU2VuZCBub3RpZmljYXRpb24iCiAgICAgICAgIHMuYmFja2VuZCAtPiBzLmRhdGFiYXNlICJTYXZlIGluZm9ybWF0aW9uIgoKICAgICAgICAgYXV0b2xheW91dCBscgogICAgICAgIH0KCiAgICAgICAgZHluYW1pYyBzICJDcmVhdGVQcm9tb3MiIHsKICAgICAgICAgICAgZSAtPiBzLmFkbWluVWkgIkNyZWF0ZSBQcm9tb3Rpb24iCiAgICAgICAgICAgIHMuYWRtaW5VaSAtPiBzLmFkbWluQXBpICJDcmVhdGUgUHJvbW90aW9uIgogICAgICAgICAgICBzLmFkbWluQXBpIC0+IHMuZGF0YWJhc2UgIlNhdmUgUHJvbW90aW9uIgoKICAgICAgICAgICAgYXV0b2xheW91dCBscgogICAgICAgIH0KCgogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIGVsZW1lbnQgIkVsZW1lbnQiIHsKICAgICAgICAgICAgICAgIGNvbG9yICNmODg3MjgKICAgICAgICAgICAgICAgIHN0cm9rZSAjZjg4NzI4CiAgICAgICAgICAgICAgICBzdHJva2VXaWR0aCA3CiAgICAgICAgICAgICAgICBzaGFwZSByb3VuZGVkYm94CiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiUGVyc29uIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBwZXJzb24KICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJEYXRhYmFzZSIgewogICAgICAgICAgICAgICAgc2hhcGUgY3lsaW5kZXIKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJCb3VuZGFyeSIgewogICAgICAgICAgICAgICAgc3Ryb2tlV2lkdGggNQogICAgICAgICAgICB9CiAgICAgICAgICAgIHJlbGF0aW9uc2hpcCAiUmVsYXRpb25zaGlwIiB7CiAgICAgICAgICAgICAgICB0aGlja25lc3MgNAogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICB0aGVtZSAiaHR0cHM6Ly9zdGF0aWMuc3RydWN0dXJpenIuY29tL3RoZW1lcy9hbWF6b24td2ViLXNlcnZpY2VzLTIwMjMuMDEuMzEvdGhlbWUuanNvbiIKICAgIH0KICAgIAp9"
+  },
+  "views" : {
+    "componentViews" : [ {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "containerId" : "33",
+      "elements" : [ {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "5",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "6",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "13",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "34",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "35",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "36",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "37",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "38",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "39",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "40",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "key" : "Backend",
+      "order" : 4,
+      "relationships" : [ {
+        "id" : "67"
+      }, {
+        "id" : "68"
+      }, {
+        "id" : "71"
+      }, {
+        "id" : "72"
+      }, {
+        "id" : "73"
+      }, {
+        "id" : "74"
+      }, {
+        "id" : "77"
+      }, {
+        "id" : "80"
+      } ]
+    }, {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "containerId" : "20",
+      "elements" : [ {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "21",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "22",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "23",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "24",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "25",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "26",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "key" : "AdminUI",
+      "order" : 5,
+      "relationships" : [ {
+        "id" : "51"
+      }, {
+        "id" : "53"
+      } ]
+    }, {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "containerId" : "8",
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "9",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "10",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "11",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "12",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "13",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "key" : "UI",
+      "order" : 6,
+      "relationships" : [ {
+        "id" : "44"
+      }, {
+        "id" : "46"
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "AdminUI",
+      "styles" : {
+        "elements" : [ {
+          "color" : "#f88728",
+          "shape" : "RoundedBox",
+          "stroke" : "#f88728",
+          "strokeWidth" : 7,
+          "tag" : "Element"
+        }, {
+          "shape" : "Person",
+          "tag" : "Person"
+        }, {
+          "shape" : "Cylinder",
+          "tag" : "Database"
+        }, {
+          "strokeWidth" : 5,
+          "tag" : "Boundary"
+        } ],
+        "relationships" : [ {
+          "tag" : "Relationship",
+          "thickness" : 4
+        } ]
+      },
+      "terminology" : { },
+      "themes" : [ "https://static.structurizr.com/themes/amazon-web-services-2023.01.31/theme.json" ]
+    },
+    "containerViews" : [ {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "5",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "6",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "8",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "13",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "20",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "26",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "32",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "33",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "41",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "key" : "Container",
+      "order" : 3,
+      "relationships" : [ {
+        "id" : "42"
+      }, {
+        "id" : "48"
+      }, {
+        "id" : "49"
+      }, {
+        "id" : "55"
+      }, {
+        "id" : "57"
+      }, {
+        "id" : "58"
+      }, {
+        "id" : "59"
+      }, {
+        "id" : "60"
+      }, {
+        "id" : "61"
+      }, {
+        "id" : "62"
+      }, {
+        "id" : "63"
+      }, {
+        "id" : "64"
+      }, {
+        "id" : "65"
+      }, {
+        "id" : "66"
+      }, {
+        "id" : "75"
+      }, {
+        "id" : "78"
+      }, {
+        "id" : "81"
+      }, {
+        "id" : "83"
+      } ],
+      "softwareSystemId" : "7"
+    } ],
+    "deploymentViews" : [ {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elements" : [ {
+        "id" : "85",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "86",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "87",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "88",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "89",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "90",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "91",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "92",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "93",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "96",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "97",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "100",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "108",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "109",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "112",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "115",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "116",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "120",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "environment" : "Deployment",
+      "generatedKey" : true,
+      "key" : "Deployment-001",
+      "order" : 1,
+      "relationships" : [ {
+        "id" : "101"
+      }, {
+        "id" : "102"
+      }, {
+        "id" : "103"
+      }, {
+        "id" : "104"
+      }, {
+        "id" : "105"
+      }, {
+        "id" : "106"
+      }, {
+        "id" : "107"
+      }, {
+        "id" : "110"
+      }, {
+        "id" : "111"
+      }, {
+        "id" : "113"
+      }, {
+        "id" : "114"
+      }, {
+        "id" : "117"
+      }, {
+        "id" : "118"
+      }, {
+        "id" : "119"
+      }, {
+        "id" : "121"
+      }, {
+        "id" : "122"
+      }, {
+        "id" : "123"
+      }, {
+        "id" : "94"
+      }, {
+        "id" : "95"
+      }, {
+        "id" : "98"
+      }, {
+        "id" : "99"
+      } ],
+      "softwareSystemId" : "7"
+    } ],
+    "dynamicViews" : [ {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elementId" : "7",
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "5",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "6",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "8",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "13",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "32",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "33",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "externalBoundariesVisible" : false,
+      "key" : "CheckoutFlow",
+      "order" : 7,
+      "relationships" : [ {
+        "description" : "Submit checkout",
+        "id" : "42",
+        "order" : "1",
+        "response" : false
+      }, {
+        "description" : "Submit order",
+        "id" : "48",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Apply discounts",
+        "id" : "57",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Apply Promotions",
+        "id" : "57",
+        "order" : "4",
+        "response" : false
+      }, {
+        "description" : "Place Hold",
+        "id" : "78",
+        "order" : "5",
+        "response" : false
+      }, {
+        "description" : "Submit Shipping",
+        "id" : "75",
+        "order" : "6",
+        "response" : false
+      }, {
+        "description" : "Send notification",
+        "id" : "81",
+        "order" : "7",
+        "response" : false
+      }, {
+        "description" : "Save information",
+        "id" : "63",
+        "order" : "8",
+        "response" : false
+      } ]
+    }, {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elementId" : "7",
+      "elements" : [ {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "20",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "26",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "32",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "externalBoundariesVisible" : false,
+      "key" : "CreatePromos",
+      "order" : 8,
+      "relationships" : [ {
+        "description" : "Create Promotion",
+        "id" : "49",
+        "order" : "1",
+        "response" : false
+      }, {
+        "description" : "Create Promotion",
+        "id" : "55",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Save Promotion",
+        "id" : "65",
+        "order" : "3",
+        "response" : false
+      } ]
+    } ],
+    "systemContextViews" : [ {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "5",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "6",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "7",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "key" : "Context",
+      "order" : 2,
+      "relationships" : [ {
+        "id" : "43"
+      }, {
+        "id" : "50"
+      }, {
+        "id" : "76"
+      }, {
+        "id" : "79"
+      }, {
+        "id" : "82"
+      }, {
+        "id" : "84"
+      } ],
+      "softwareSystemId" : "7"
+    } ]
+  }
+}
