@@ -29,7 +29,7 @@ jobs:
               --workspace-file workspace.dsl \
               --branches main,develop,${GITHUB_REF_NAME} \
               --default-branch main \
-              --output /var/model/site
+              --output-dir /var/model/site
 
       - name: Upload site artifacts
         uses: actions/upload-pages-artifact@v3
