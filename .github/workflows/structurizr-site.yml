@@ -19,6 +19,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Prepare output directory
+        run: mkdir -p site && chmod 777 site
+
       - name: Generate Structurizr site
         run: |
           docker run --rm \
