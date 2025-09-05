@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - develop
+      - "feature/github-actions"
       - "release/*"
   workflow_dispatch:
 
@@ -14,7 +15,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -31,7 +32,7 @@ jobs:
               --output /var/model/site
 
       - name: Upload site artifacts
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./site
 
@@ -48,5 +49,5 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v3
 
