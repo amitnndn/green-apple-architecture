@@ -20,14 +20,16 @@ jobs:
           fetch-depth: 0
 
       - name: Prepare output directory
-        run: mkdir -p site && chmod 777 site
+        run: |
+          mkdir -p site && chmod 777 site
+          mkdir -p scratch && chmod 777 scratch
 
       - name: Generate Structurizr site
         run: |
           docker run --rm \
             --user "$(id -u):$(id -g)" \
             -v "${{ github.workspace }}:/var/workspace" \
-            -v "${{ github.workspace }}/build:/var/model" \
+            -v "${{ github.workspace }}/scratch:/var/model" \
             -v "${{ github.workspace }}/site:/var/output" \
             ghcr.io/avisi-cloud/structurizr-site-generatr:latest \
             generate-site \
