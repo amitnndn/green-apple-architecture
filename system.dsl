@@ -1,4 +1,4 @@
-s = softwareSystem "Green Apple E-Commerce System" {
+s = softwareSystem "Green Apple E-Commerce System" "Green Apple's E-Commerce system hosted by Bold Orange" {
     !docs docs
     !adrs adrs
     ui = container "E-Commerce UI" "" "ExpressJS" {
