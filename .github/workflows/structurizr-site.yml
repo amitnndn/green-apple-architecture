@@ -25,7 +25,10 @@ jobs:
       - name: Generate Structurizr site
         run: |
           docker run --rm \
-            -v "${{ github.workspace }}:/var/model" \
+            --user "$(id -u):$(id -g)" \
+            -v "${{ github.workspace }}:/var/workspace" \
+            -v "${{ github.workspace }}/build:/var/model" \
+            -v "${{ github.workspace }}/site:/var/output" \
             ghcr.io/avisi-cloud/structurizr-site-generatr:latest \
             generate-site \
               --git-url https://github.com/${{ github.repository }}.git \
