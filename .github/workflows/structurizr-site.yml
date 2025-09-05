@@ -1,53 +1,52 @@
 name: Build and deploy structurizr site
 
-on: 
-	push: 
-		branches:
-			- main 
-			- develop
-			- release/*
-	workflow_dispatch: 
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - "release/*"
+  workflow_dispatch:
 
 jobs:
-	build:
-		runs-on: ubuntu-latest
-	
-	steps:
-		- name: Checkout Repository
-			uses: actions/checkout@v3
-			with:
-				fetch-depth: 0
-		- name: Setup Node.js
-			uses: actions/setup-node@v3
-			with:
-				node-version: '20'
-		- name: Generate Structurizr site
-			run: |
-				docker run --rm \
-					-v "${{ github.workspace }}:/var/model" \
-					ghcr.io/avisi-cloud/structurizr-site-generatr:latest \
-					generate-site \
-						--git-url https://github.com/${{ github.repository }}.git \
-						--workspace-file workspace.dsl \
-						--branches main,develop,${GITHUB_REF_NAME} \
-						--default-branch main \
-						--output /var/model/site
-		- name: Upload site artifacts
-			uses: actions/upload-pages-artifact@v2
-			with: 
-				path: ./site
+  build:
+    runs-on: ubuntu-latest
 
-	deploy:
-		runs-on: ubuntu-latest
-		needs: build
-		permissions: 
-			pages: write 
-			id-token: write 
-		environment: 
-			name: github-pages
-			url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-		steps: 
-			- name: Deploy to github pages 
-				id: deployment 
-				uses: actions/deploy-pages@v2
+      - name: Generate Structurizr site
+        run: |
+          docker run --rm \
+            -v "${{ github.workspace }}:/var/model" \
+            ghcr.io/avisi-cloud/structurizr-site-generatr:latest \
+            generate-site \
+              --git-url https://github.com/${{ github.repository }}.git \
+              --workspace-file workspace.dsl \
+              --branches main,develop,${GITHUB_REF_NAME} \
+              --default-branch main \
+              --output /var/model/site
+
+      - name: Upload site artifacts
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./site
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
