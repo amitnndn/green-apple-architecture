@@ -1,5 +1,6 @@
 workspace "Green Apple" "Architecture" {
     !identifiers hierarchical
+    !docs docs
 
     model {
         !include people.dsl
